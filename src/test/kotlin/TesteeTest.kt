@@ -18,6 +18,6 @@ class TesteeTest {
 
     @Test
     fun testee3Success() {
-        assertEquals(testee.testee3(), "To Test"
+        assertEquals(testee.testee3(), "To Test")
     }
 }
