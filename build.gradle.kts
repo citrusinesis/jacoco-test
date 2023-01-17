@@ -39,7 +39,8 @@ tasks.jacocoTestReport {
     reports {
         html.required.set(true)
         html.outputLocation.set(file("$buildDir/reports/myReport.html"))
-        xml.required.set(false)
+        xml.required.set(true)
+        html.outputLocation.set(flie("$buildDir/reports/jacocoReport.xml"))
         csv.required.set(false)
     }
 
