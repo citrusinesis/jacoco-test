@@ -32,10 +32,10 @@ jobs:
       run: chmod +x gradlew
     - name: Test with Gradle
       run: ./gradlew test
-    - name: Add coverage to PR
+    - name: 📝Add coverage to PR
       id: jacoco
       uses: Madrapps/jacoco-report@v1.3
       with:
-        paths: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
+        paths: ${{ github.workspace }}/build/reports/jacocoReport.xml
         token: ${{ secrets.GITHUB_TOKEN }}
         min-coverage-overall: 40

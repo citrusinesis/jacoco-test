@@ -37,10 +37,9 @@ jacoco {
 
 tasks.jacocoTestReport {
     reports {
-        html.required.set(true)
-        html.outputLocation.set(file("$buildDir/reports/myReport.html"))
+        html.required.set(false)
         xml.required.set(true)
-        html.outputLocation.set(flie("$buildDir/reports/jacocoReport"))
+        xml.outputLocation.set(file("$buildDir/reports/jacocoReport.xml"))
         csv.required.set(false)
     }
 
@@ -55,7 +54,7 @@ tasks.jacocoTestCoverageVerification {
             limit {
                 counter = "BRANCH"
                 value = "COVEREDRATIO"
-                minimum = 0
+                minimum = "0".toBigDecimal()
             }
         }
     }
