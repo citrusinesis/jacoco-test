@@ -54,6 +54,7 @@ tasks.jacocoTestCoverageVerification {
             limit {
                 counter = "BRANCH"
                 value = "COVEREDRATIO"
+                minimum = 0
             }
         }
     }
