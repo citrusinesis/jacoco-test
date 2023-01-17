@@ -20,9 +20,4 @@ class TesteeTest {
     fun testee3Success() {
         assertEquals(testee.testee3(), "To Test")
     }
-
-    @Test
-    fun failedTest() {
-        assert(value = false)
-    }
 }
